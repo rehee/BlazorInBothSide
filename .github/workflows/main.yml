@@ -22,7 +22,7 @@ jobs:
         dotnet-version: 5.0.101
 
     - name: LS
-      run: ls
+      run: tree
         
     - name: Publish .Net Core Project
       run: dotnet publish BlazorInBothSide\BlazorInBothSide\Browsers\BlazorBrowser\BlazorBrowser.csproj -c Release -o release --nologo
