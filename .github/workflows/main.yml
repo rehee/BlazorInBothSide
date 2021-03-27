@@ -25,7 +25,7 @@ jobs:
       run: ls
         
     - name: Publish .Net Core Project
-      run: dotnet publish Browsers\BlazorBrowser\BlazorBrowser.csproj -c Release -o release --nologo
+      run: dotnet publish BlazorInBothSide\BlazorInBothSide\Browsers\BlazorBrowser\BlazorBrowser.csproj -c Release -o release --nologo
       
     - name: Change base-tag in index.html from / to TryBlazorAction
       run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorInBothSide\/" \/>/g' release/wwwroot/index.html
