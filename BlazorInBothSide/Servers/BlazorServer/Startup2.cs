@@ -13,9 +13,9 @@ using System.Threading.Tasks;
 
 namespace BlazorServer
 {
-  public class Startup
+  public class Startup2
   {
-    public Startup(IConfiguration configuration)
+    public Startup2(IConfiguration configuration)
     {
       Configuration = configuration;
     }
