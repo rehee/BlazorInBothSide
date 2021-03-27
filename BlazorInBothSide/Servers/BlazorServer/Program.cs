@@ -20,7 +20,7 @@ namespace BlazorServer
         Host.CreateDefaultBuilder(args)
             .ConfigureWebHostDefaults(webBuilder =>
             {
-              webBuilder.UseStartup<Startup2>();
+              webBuilder.UseStartup<Startup>();
             });
   }
 }
