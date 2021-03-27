@@ -20,6 +20,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.101
+
+    - name: LS
+      run: ls
         
     - name: Publish .Net Core Project
       run: dotnet publish Browsers\BlazorBrowser\BlazorBrowser.csproj -c Release -o release --nologo
