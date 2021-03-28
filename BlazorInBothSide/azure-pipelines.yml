@@ -10,7 +10,7 @@ variables:
 
 # Publish Blazor App
 steps:
-- script: dotnet publish BlazorInBothSide/BlazorInBothSide/Browser/BlazorBrowser/BlazorBrowser.csproj --configuration $(buildConfiguration) --output $(buildOutput)
+- script: dotnet publish Browser/BlazorBrowser/BlazorBrowser.csproj --configuration $(buildConfiguration) --output $(buildOutput)
   displayName: 'Publish Blazor Site'
 
 # Install netlify-cli
